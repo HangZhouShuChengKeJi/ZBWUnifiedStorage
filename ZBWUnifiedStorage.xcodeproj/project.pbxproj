@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7131010DEFF4DD75B34C2D8B /* libPods-ZBWUnifiedStorage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D10353A0418E024007FB644D /* libPods-ZBWUnifiedStorage.a */; };
+		8C113EDD224A02F200E26866 /* ZBWUnifiedStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EDC224A02F200E26866 /* ZBWUnifiedStorage.m */; };
+		8C113EDE224A02F200E26866 /* ZBWUnifiedStorage.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8C113EDB224A02F200E26866 /* ZBWUnifiedStorage.h */; };
+		8C113F02224A058200E26866 /* ZBWStorageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EE6224A058100E26866 /* ZBWStorageFactory.m */; };
+		8C113F03224A058200E26866 /* ZBWUSCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EE8224A058100E26866 /* ZBWUSCommon.m */; };
+		8C113F04224A058200E26866 /* ZBWUserDefaultsStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EEC224A058100E26866 /* ZBWUserDefaultsStorage.m */; };
+		8C113F05224A058200E26866 /* ZBWStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EED224A058100E26866 /* ZBWStorage.m */; };
+		8C113F06224A058200E26866 /* ZBWMemoryAndArchiveStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EEE224A058100E26866 /* ZBWMemoryAndArchiveStorage.m */; };
+		8C113F07224A058200E26866 /* ZBWKeyChainStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EF2224A058100E26866 /* ZBWKeyChainStorage.m */; };
+		8C113F08224A058200E26866 /* ZBWArchiverStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EF6224A058100E26866 /* ZBWArchiverStorage.m */; };
+		8C113F09224A058200E26866 /* ZBWFileStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EF7224A058100E26866 /* ZBWFileStorage.m */; };
+		8C113F0A224A058200E26866 /* ZBWMemoryStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EF8224A058100E26866 /* ZBWMemoryStorage.m */; };
+		8C113F0B224A058200E26866 /* ZBWUserDefaultsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EFA224A058200E26866 /* ZBWUserDefaultsProxy.m */; };
+		8C113F0C224A058200E26866 /* ZBWStorageDomain.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113EFE224A058200E26866 /* ZBWStorageDomain.m */; };
+		8C113F0D224A058200E26866 /* ZBWStorageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C113F01224A058200E26866 /* ZBWStorageObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C113ED6224A02F200E26866 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				8C113EDE224A02F200E26866 /* ZBWUnifiedStorage.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		41233189FCD0DA56BC0E6EC0 /* Pods-ZBWUnifiedStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBWUnifiedStorage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZBWUnifiedStorage/Pods-ZBWUnifiedStorage.debug.xcconfig"; sourceTree = "<group>"; };
+		8C113ED8224A02F200E26866 /* libZBWUnifiedStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZBWUnifiedStorage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C113EDB224A02F200E26866 /* ZBWUnifiedStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZBWUnifiedStorage.h; sourceTree = "<group>"; };
+		8C113EDC224A02F200E26866 /* ZBWUnifiedStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZBWUnifiedStorage.m; sourceTree = "<group>"; };
+		8C113EE5224A058100E26866 /* ZBWUSCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWUSCommon.h; sourceTree = "<group>"; };
+		8C113EE6224A058100E26866 /* ZBWStorageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWStorageFactory.m; sourceTree = "<group>"; };
+		8C113EE7224A058100E26866 /* ZBWUSDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWUSDefine.h; sourceTree = "<group>"; };
+		8C113EE8224A058100E26866 /* ZBWUSCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWUSCommon.m; sourceTree = "<group>"; };
+		8C113EE9224A058100E26866 /* ZBWStorageFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWStorageFactory.h; sourceTree = "<group>"; };
+		8C113EEB224A058100E26866 /* ZBWKeyChainStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWKeyChainStorage.h; sourceTree = "<group>"; };
+		8C113EEC224A058100E26866 /* ZBWUserDefaultsStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWUserDefaultsStorage.m; sourceTree = "<group>"; };
+		8C113EED224A058100E26866 /* ZBWStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWStorage.m; sourceTree = "<group>"; };
+		8C113EEE224A058100E26866 /* ZBWMemoryAndArchiveStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWMemoryAndArchiveStorage.m; sourceTree = "<group>"; };
+		8C113EEF224A058100E26866 /* ZBWMemoryStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWMemoryStorage.h; sourceTree = "<group>"; };
+		8C113EF0224A058100E26866 /* ZBWFileStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWFileStorage.h; sourceTree = "<group>"; };
+		8C113EF1224A058100E26866 /* ZBWArchiverStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWArchiverStorage.h; sourceTree = "<group>"; };
+		8C113EF2224A058100E26866 /* ZBWKeyChainStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWKeyChainStorage.m; sourceTree = "<group>"; };
+		8C113EF3224A058100E26866 /* ZBWUserDefaultsStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWUserDefaultsStorage.h; sourceTree = "<group>"; };
+		8C113EF4224A058100E26866 /* ZBWMemoryAndArchiveStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWMemoryAndArchiveStorage.h; sourceTree = "<group>"; };
+		8C113EF5224A058100E26866 /* ZBWStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWStorage.h; sourceTree = "<group>"; };
+		8C113EF6224A058100E26866 /* ZBWArchiverStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWArchiverStorage.m; sourceTree = "<group>"; };
+		8C113EF7224A058100E26866 /* ZBWFileStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWFileStorage.m; sourceTree = "<group>"; };
+		8C113EF8224A058100E26866 /* ZBWMemoryStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWMemoryStorage.m; sourceTree = "<group>"; };
+		8C113EFA224A058200E26866 /* ZBWUserDefaultsProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWUserDefaultsProxy.m; sourceTree = "<group>"; };
+		8C113EFB224A058200E26866 /* ZBWUserDefaultsInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWUserDefaultsInterface.h; sourceTree = "<group>"; };
+		8C113EFC224A058200E26866 /* ZBWUserDefaultsProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWUserDefaultsProxy.h; sourceTree = "<group>"; };
+		8C113EFE224A058200E26866 /* ZBWStorageDomain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWStorageDomain.m; sourceTree = "<group>"; };
+		8C113EFF224A058200E26866 /* ZBWStorageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWStorageObject.h; sourceTree = "<group>"; };
+		8C113F00224A058200E26866 /* ZBWStorageDomain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBWStorageDomain.h; sourceTree = "<group>"; };
+		8C113F01224A058200E26866 /* ZBWStorageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBWStorageObject.m; sourceTree = "<group>"; };
+		D10353A0418E024007FB644D /* libPods-ZBWUnifiedStorage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZBWUnifiedStorage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAEB6136AC1E365A8196BA0F /* Pods-ZBWUnifiedStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBWUnifiedStorage.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZBWUnifiedStorage/Pods-ZBWUnifiedStorage.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C113ED5224A02F200E26866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7131010DEFF4DD75B34C2D8B /* libPods-ZBWUnifiedStorage.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		663AFAB8C2726AF272ECC328 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41233189FCD0DA56BC0E6EC0 /* Pods-ZBWUnifiedStorage.debug.xcconfig */,
+				FAEB6136AC1E365A8196BA0F /* Pods-ZBWUnifiedStorage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8C113ECF224A02F200E26866 = {
+			isa = PBXGroup;
+			children = (
+				8C113EDA224A02F200E26866 /* ZBWUnifiedStorage */,
+				8C113ED9224A02F200E26866 /* Products */,
+				663AFAB8C2726AF272ECC328 /* Pods */,
+				D15F35A9A437F1E4DEABF847 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8C113ED9224A02F200E26866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C113ED8224A02F200E26866 /* libZBWUnifiedStorage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C113EDA224A02F200E26866 /* ZBWUnifiedStorage */ = {
+			isa = PBXGroup;
+			children = (
+				8C113EFD224A058200E26866 /* Model */,
+				8C113EEA224A058100E26866 /* Storage */,
+				8C113EF9224A058200E26866 /* UserDefaultsCompatible */,
+				8C113EE4224A058100E26866 /* Utility */,
+				8C113EDB224A02F200E26866 /* ZBWUnifiedStorage.h */,
+				8C113EDC224A02F200E26866 /* ZBWUnifiedStorage.m */,
+			);
+			path = ZBWUnifiedStorage;
+			sourceTree = "<group>";
+		};
+		8C113EE4224A058100E26866 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8C113EE5224A058100E26866 /* ZBWUSCommon.h */,
+				8C113EE6224A058100E26866 /* ZBWStorageFactory.m */,
+				8C113EE7224A058100E26866 /* ZBWUSDefine.h */,
+				8C113EE8224A058100E26866 /* ZBWUSCommon.m */,
+				8C113EE9224A058100E26866 /* ZBWStorageFactory.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8C113EEA224A058100E26866 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				8C113EEB224A058100E26866 /* ZBWKeyChainStorage.h */,
+				8C113EEC224A058100E26866 /* ZBWUserDefaultsStorage.m */,
+				8C113EED224A058100E26866 /* ZBWStorage.m */,
+				8C113EEE224A058100E26866 /* ZBWMemoryAndArchiveStorage.m */,
+				8C113EEF224A058100E26866 /* ZBWMemoryStorage.h */,
+				8C113EF0224A058100E26866 /* ZBWFileStorage.h */,
+				8C113EF1224A058100E26866 /* ZBWArchiverStorage.h */,
+				8C113EF2224A058100E26866 /* ZBWKeyChainStorage.m */,
+				8C113EF3224A058100E26866 /* ZBWUserDefaultsStorage.h */,
+				8C113EF4224A058100E26866 /* ZBWMemoryAndArchiveStorage.h */,
+				8C113EF5224A058100E26866 /* ZBWStorage.h */,
+				8C113EF6224A058100E26866 /* ZBWArchiverStorage.m */,
+				8C113EF7224A058100E26866 /* ZBWFileStorage.m */,
+				8C113EF8224A058100E26866 /* ZBWMemoryStorage.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		8C113EF9224A058200E26866 /* UserDefaultsCompatible */ = {
+			isa = PBXGroup;
+			children = (
+				8C113EFA224A058200E26866 /* ZBWUserDefaultsProxy.m */,
+				8C113EFB224A058200E26866 /* ZBWUserDefaultsInterface.h */,
+				8C113EFC224A058200E26866 /* ZBWUserDefaultsProxy.h */,
+			);
+			path = UserDefaultsCompatible;
+			sourceTree = "<group>";
+		};
+		8C113EFD224A058200E26866 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C113EFE224A058200E26866 /* ZBWStorageDomain.m */,
+				8C113EFF224A058200E26866 /* ZBWStorageObject.h */,
+				8C113F00224A058200E26866 /* ZBWStorageDomain.h */,
+				8C113F01224A058200E26866 /* ZBWStorageObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D15F35A9A437F1E4DEABF847 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D10353A0418E024007FB644D /* libPods-ZBWUnifiedStorage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C113ED7224A02F200E26866 /* ZBWUnifiedStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C113EE1224A02F200E26866 /* Build configuration list for PBXNativeTarget "ZBWUnifiedStorage" */;
+			buildPhases = (
+				605B2159A5A3ABED5F4896F9 /* [CP] Check Pods Manifest.lock */,
+				8C113ED4224A02F200E26866 /* Sources */,
+				8C113ED5224A02F200E26866 /* Frameworks */,
+				8C113ED6224A02F200E26866 /* CopyFiles */,
+				D50B6DBC4A8AEDA29A357B6F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZBWUnifiedStorage;
+			productName = ZBWUnifiedStorage;
+			productReference = 8C113ED8224A02F200E26866 /* libZBWUnifiedStorage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C113ED0224A02F200E26866 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "朱博文";
+				TargetAttributes = {
+					8C113ED7224A02F200E26866 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 8C113ED3224A02F200E26866 /* Build configuration list for PBXProject "ZBWUnifiedStorage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8C113ECF224A02F200E26866;
+			productRefGroup = 8C113ED9224A02F200E26866 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C113ED7224A02F200E26866 /* ZBWUnifiedStorage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		605B2159A5A3ABED5F4896F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZBWUnifiedStorage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D50B6DBC4A8AEDA29A357B6F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZBWUnifiedStorage/Pods-ZBWUnifiedStorage-resources.sh",
+				"${PODS_ROOT}/SSKeychain/Support/SSKeychain.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SSKeychain.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZBWUnifiedStorage/Pods-ZBWUnifiedStorage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C113ED4224A02F200E26866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C113F03224A058200E26866 /* ZBWUSCommon.m in Sources */,
+				8C113F09224A058200E26866 /* ZBWFileStorage.m in Sources */,
+				8C113F06224A058200E26866 /* ZBWMemoryAndArchiveStorage.m in Sources */,
+				8C113F05224A058200E26866 /* ZBWStorage.m in Sources */,
+				8C113F08224A058200E26866 /* ZBWArchiverStorage.m in Sources */,
+				8C113F0C224A058200E26866 /* ZBWStorageDomain.m in Sources */,
+				8C113F0D224A058200E26866 /* ZBWStorageObject.m in Sources */,
+				8C113F07224A058200E26866 /* ZBWKeyChainStorage.m in Sources */,
+				8C113F02224A058200E26866 /* ZBWStorageFactory.m in Sources */,
+				8C113F04224A058200E26866 /* ZBWUserDefaultsStorage.m in Sources */,
+				8C113F0B224A058200E26866 /* ZBWUserDefaultsProxy.m in Sources */,
+				8C113F0A224A058200E26866 /* ZBWMemoryStorage.m in Sources */,
+				8C113EDD224A02F200E26866 /* ZBWUnifiedStorage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8C113EDF224A02F200E26866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8C113EE0224A02F200E26866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C113EE2224A02F200E26866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41233189FCD0DA56BC0E6EC0 /* Pods-ZBWUnifiedStorage.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZRFDMPH3R;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C113EE3224A02F200E26866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAEB6136AC1E365A8196BA0F /* Pods-ZBWUnifiedStorage.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SZRFDMPH3R;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C113ED3224A02F200E26866 /* Build configuration list for PBXProject "ZBWUnifiedStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C113EDF224A02F200E26866 /* Debug */,
+				8C113EE0224A02F200E26866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C113EE1224A02F200E26866 /* Build configuration list for PBXNativeTarget "ZBWUnifiedStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C113EE2224A02F200E26866 /* Debug */,
+				8C113EE3224A02F200E26866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C113ED0224A02F200E26866 /* Project object */;
+}
