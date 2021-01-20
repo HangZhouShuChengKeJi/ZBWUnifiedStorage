@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ZBWUnifiedStorage"
   s.version      = "0.0.6"
-  s.summary      = "A short description of ZBWUnifiedStorage. 统一存储库"
+  s.summary      = "iOS 统一存储库"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,9 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC 
+                    统一存储，支持多种形式的持久化和内存存储方式，使用统一的API调用方式，降低各种存储方式的使用成本，提高效率。
+                    支持NSUserDefaults、NSCache、归档、钥匙串keychain等存储方式;
+                    支持过期时间设置;
                     存储路径从 cache目录改成document目录
                    DESC
 
@@ -95,26 +98,26 @@ Pod::Spec.new do |s|
   s.default_subspecs = 'UnifiedStorage'
 
   s.subspec 'Model' do |modelSpec|
-    modelSpec.source_files = 'ZBWUnifiedStorage/ZBWUnifiedStorage/Model/*.{h,m}'
+    modelSpec.source_files = 'ZBWUnifiedStorage/Model/*.{h,m}'
   end
 
   s.subspec 'Utility' do |utilitySpec|
-    utilitySpec.source_files = 'ZBWUnifiedStorage/ZBWUnifiedStorage/Utility/*.{h,m}'
+    utilitySpec.source_files = 'ZBWUnifiedStorage/Utility/*.{h,m}'
   end
 
   s.subspec 'Storage' do |storageSpec|
-    storageSpec.source_files = 'ZBWUnifiedStorage/ZBWUnifiedStorage/Storage/*.{h,m}'
+    storageSpec.source_files = 'ZBWUnifiedStorage/Storage/*.{h,m}'
   end
 
   s.subspec 'UnifiedStorage' do |usSpec|
-  usSpec.source_files = "ZBWUnifiedStorage/ZBWUnifiedStorage/ZBWUnifiedStorage.{h,m}"
+  usSpec.source_files = "ZBWUnifiedStorage/ZBWUnifiedStorage.{h,m}"
   usSpec.dependency 'ZBWUnifiedStorage/Model'
   usSpec.dependency 'ZBWUnifiedStorage/Utility'
   usSpec.dependency 'ZBWUnifiedStorage/Storage'
   end
 
   s.subspec 'UserDefaultsCompatible' do |udcSpec|
-    udcSpec.source_files = 'ZBWUnifiedStorage/ZBWUnifiedStorage/UserDefaultsCompatible/*.{h,m}'
+    udcSpec.source_files = 'ZBWUnifiedStorage/UserDefaultsCompatible/*.{h,m}'
     udcSpec.dependency 'ZBWUnifiedStorage/UnifiedStorage'
     udcSpec.xcconfig = { 
       'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) ZBW_US_Compatible_UserDefaults=1'
