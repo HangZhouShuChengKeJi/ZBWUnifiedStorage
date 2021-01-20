@@ -97,23 +97,23 @@ Pod::Spec.new do |s|
 
   s.default_subspecs = 'UnifiedStorage'
 
-  s.subspec 'Model' do |modelSpec|
-    modelSpec.source_files = 'ZBWUnifiedStorage/Model/*.{h,m}'
-  end
+  # s.subspec 'Model' do |modelSpec|
+  #   modelSpec.source_files = 'ZBWUnifiedStorage/Model/*.{h,m}'
+  # end
 
-  s.subspec 'Utility' do |utilitySpec|
-    utilitySpec.source_files = 'ZBWUnifiedStorage/Utility/*.{h,m}'
-  end
+  # s.subspec 'Utility' do |utilitySpec|
+  #   utilitySpec.source_files = 'ZBWUnifiedStorage/Utility/*.{h,m}'
+  # end
 
-  s.subspec 'Storage' do |storageSpec|
-    storageSpec.source_files = 'ZBWUnifiedStorage/Storage/*.{h,m}'
-  end
+  # s.subspec 'Storage' do |storageSpec|
+  #   storageSpec.source_files = 'ZBWUnifiedStorage/Storage/*.{h,m}'
+  # end
 
   s.subspec 'UnifiedStorage' do |usSpec|
-  usSpec.source_files = "ZBWUnifiedStorage/ZBWUnifiedStorage.{h,m}"
-  usSpec.dependency 'ZBWUnifiedStorage/Model'
-  usSpec.dependency 'ZBWUnifiedStorage/Utility'
-  usSpec.dependency 'ZBWUnifiedStorage/Storage'
+    usSpec.source_files = "ZBWUnifiedStorage/ZBWUnifiedStorage.{h,m}","ZBWUnifiedStorage/**/*.{h,m}"
+  # usSpec.dependency 'ZBWUnifiedStorage/Model'
+  # usSpec.dependency 'ZBWUnifiedStorage/Utility'
+  # usSpec.dependency 'ZBWUnifiedStorage/Storage'
   end
 
   s.subspec 'UserDefaultsCompatible' do |udcSpec|
@@ -125,7 +125,7 @@ Pod::Spec.new do |s|
   end
 
   s.requires_arc = true
-  s.prefix_header_contents = '#import <UIKit/UIKit.h>', '#import <Foundation/Foundation.h>','#import <ZBWUSDefine.h>'
+  # s.prefix_header_contents = '#import <UIKit/UIKit.h>', '#import <Foundation/Foundation.h>' #,'#import <ZBWUSDefine.h>'
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "SSKeychain", "1.4.0"
