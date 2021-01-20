@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZBWUnifiedStorage"
-  s.version      = "0.0.2"
+  s.version      = "0.0.6"
   s.summary      = "A short description of ZBWUnifiedStorage. 统一存储库"
 
   # This description is used to generate tags and improve search results.
