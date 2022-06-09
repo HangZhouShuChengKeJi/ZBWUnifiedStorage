@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZBWUnifiedStorage"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "iOS 统一存储库"
 
   # This description is used to generate tags and improve search results.
@@ -128,6 +128,6 @@ Pod::Spec.new do |s|
   # s.prefix_header_contents = '#import <UIKit/UIKit.h>', '#import <Foundation/Foundation.h>' #,'#import <ZBWUSDefine.h>'
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "SSKeychain", "1.4.0"
+  s.dependency 'SAMKeychain'
 
 end

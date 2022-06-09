@@ -1,16 +1,16 @@
 PODS:
-  - SSKeychain (1.4.1)
+  - SAMKeychain (1.5.3)
 
 DEPENDENCIES:
-  - SSKeychain (~> 1.4.0)
+  - SAMKeychain (~> 1.5.0)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - SSKeychain
+    - SAMKeychain
 
 SPEC CHECKSUMS:
-  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
 
-PODFILE CHECKSUM: da45b0b218c7cd9133fad6c63ad44e9eccd1ca5b
+PODFILE CHECKSUM: e0740cc7e4a27dca7902a801fca90446f11842fd
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.11.2

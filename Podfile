@@ -2,6 +2,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'ZBWUnifiedStorage' do
-	pod 'SSKeychain', '~> 1.4.0'
+  pod 'SAMKeychain', '~> 1.5.0'
 end
 
