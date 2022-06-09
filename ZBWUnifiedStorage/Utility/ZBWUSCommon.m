@@ -14,6 +14,8 @@ NSDateFormatter *zbw_US_dateFormatter()
     NSDateFormatter *dateFormatter = [currentThread threadDictionary][@"__zbwUS_dateFormatter__"];
     if (!dateFormatter) {
         dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.locale = [NSLocale systemLocale];
+        dateFormatter.calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierISO8601];
         dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
         [currentThread threadDictionary][@"__zbwUS_dateFormatter__"] = dateFormatter;
     }
